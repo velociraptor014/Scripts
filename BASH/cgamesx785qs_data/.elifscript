@@ -1,0 +1,9 @@
+if [[ conditions ]]; then
+	actions
+elif [[ conditions ]]; then
+	actions
+elif [[ conditions ]]; then
+	actions
+fi
+
+# You can use multiple times ELIF conditions

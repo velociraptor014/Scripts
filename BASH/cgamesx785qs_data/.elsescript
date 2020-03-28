@@ -1,0 +1,3 @@
+else [[ conditions ]]; then
+	actions
+fi							# the fi is if inverted (inversé)

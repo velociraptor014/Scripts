@@ -1,0 +1,3 @@
+if [[ conditions ]]; then
+	actions
+fi

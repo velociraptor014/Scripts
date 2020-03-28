@@ -1,0 +1,24 @@
+clear
+tput bold; tput setaf 25
+echo "Getting ready to push data to"
+echo "BitBucket.org" | figlet -fsmall
+tput dim
+echo "Script based on Mercurial HG"
+tput bold;tput setaf 215; echo "Adding new files to local repository..."; tput sgr0
+sleep 2
+hg -q add * &>>/dev/null
+tput bold;tput setaf 202; echo "Commiting files to local pushing origin... (Already Tracked Files will be shown)"; tput sgr0; tput setaf 1
+sleep 2
+hg commit 2>>/dev/null
+tput bold;tput setaf 202; echo "Pushing files to BitBucket..."; tput sgr0
+sleep 2
+touch ...cachefile
+hg -q push &>>/dev/null
+tput sgr0
+tput setaf 2
+echo "Finished work, Cleaning cache..."
+rm ...cachefile
+sleep 5
+tput sgr0
+clear
+exit
